@@ -1,0 +1,58 @@
+#episodio{
+    position: relative;
+    z-index: 1;
+    height: 580px;
+    padding: 160px 0;
+    margin-top: 95px;
+
+    &::before {
+        content: '';
+        background-color: blue;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        transform: skewY(-6deg);
+        top: 0;
+    }
+    > div{
+        position: relative;
+        display: block;
+        z-index: 2; 
+        padding: 0 100px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .audio{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: 72px;
+        width: 100%;
+        margin: 0 auto;
+        iframe{
+            width: 100%;
+            height: 232px;
+        }
+    }
+    h2{
+        margin-bottom: 26px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 48px;
+        color: white;
+        letter-spacing: 0;
+    }
+    @media screen and (max-width:600px) {
+        height: auto;
+        padding: 50px 0;
+        >div{
+            padding: 0 20px;
+        }
+        .audio{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+            grid-gap: 9px;
+        }
+    }
+}

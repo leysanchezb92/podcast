@@ -1,0 +1,53 @@
+#nosotros{
+    display: block;
+    max-width: 1440px;
+    margin: 0 auto;
+    img{
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    div{
+        display: inline-block;
+        margin-left: 63px;
+
+        h2{
+            width: 399px;
+            height: 62px;
+            letter-spacing: 0;
+            font-size: 48px;
+            margin-bottom: 24px;
+        }
+        p{
+            width: 464px;
+            height: 204px;
+            line-height: 24px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+        }
+    }
+    @media screen and (max-width:600px){
+        display: block;
+        img{
+            width: 100vw;
+        }
+        div{
+            margin: 0 16px;
+            h2{
+                font-size: 36px;
+                height: auto;
+                width: 100%;
+            }
+            p{
+                font-size: 14px;
+                height: auto;
+                width: 100%;
+            }
+        }
+        
+        
+    }
+}

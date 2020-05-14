@@ -1,0 +1,25 @@
+#redes {
+    display: block;
+    padding: 24px;
+    >div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    i{
+        margin-top: 16px;
+        padding-right: 30px;
+    }
+    @media screen and (min-width:600px) {
+        padding: 36px 100px;
+        >div {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        i {
+            margin-top: 0;
+            padding-right: 0;
+        }
+    }
+}

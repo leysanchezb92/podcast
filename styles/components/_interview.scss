@@ -1,0 +1,35 @@
+#entrevistas{
+    display: block;
+    margin: 0 auto;
+    h2{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        padding-bottom: 32px;
+        max-width: 1440px;
+    }
+    div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: 100%;
+        margin: 0 auto;
+
+        img{
+            width: 100%;
+            display: block;
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width:600px){
+        h2{
+            font-size: 36px;
+        }
+        div{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+        }
+        
+    }
+}
